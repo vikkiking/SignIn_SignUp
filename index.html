@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="card">
+    <div id="form">
+        <div id="sign_in">
+            <div>
+                <h2>欢迎回来!</h2>
+                <form name="tel_pw">
+                    <input class="input" name="tel" placeholder="中国大陆手机号">
+                    <input class="input password" name="pw" placeholder="密码">
+                    <input type="submit" value="登录" onclick="signIn()">
+                    <a onclick="changePasswd()">忘记密码?</a>
+                </form>
+            </div>
+        </div>
+        <div class="hide" id="sign_up">
+            <h2>注册</h2>
+            <form name="info">
+                <input class="input" name="name" placeholder="昵称">
+                <select name="sex" style="border-color: #21a675">
+                    <option value="male">男</option>
+                    <option value="female">女</option>
+                    <option value="none">保密</option>
+                </select>
+                <input class="input" name="tel" placeholder="中国大陆手机号">
+                <input class="input" name="pw" placeholder="密码">
+                <input type="submit" onclick="signUp()" value="注册">
+            </form>
+        </div>
+        <div class="hide" id="changePasswd">
+            <h2>修改密码</h2>
+            <form name="cpw">
+                <input class="input" name="tel" placeholder="中国大陆手机号">
+                <input class="input password" name="np" placeholder="新密码">
+                <input class="input password" name="cp" placeholder="确认密码">
+                <input style="width: 6em" class="input" placeholder="验证码">
+                <div style="position: relative;width: 100%;margin-top: 10%">
+                    <button style="position: absolute;left: 0">发送</button>
+                    <input type="submit" style="position:absolute;margin: 0;right: 0" value="确认"
+                           onclick="gb2_sign_in()">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="change">
+        <div id="c2_sign_up">
+            <h2>还没有帐号?</h2>
+            <p>立即注册，云同步Todo List</p>
+            <button class="button" onclick="c2_signUp()">现在注册</button>
+        </div>
+        <div class="hide" id="c2_sign_in">
+            <h2>已有帐号?</h2>
+            <p>现在就登录吧，好久不见</p>
+            <button class="button" onclick="c2_signIn()">现在登录</button>
+        </div>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

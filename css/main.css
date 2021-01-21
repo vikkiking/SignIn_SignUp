@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    background-color: #21a675;
+}
+
+.hide {
+    display: none;
+}
+
+#card {
+    display: flex;
+}
+
+@media screen and (max-aspect-ratio: 8/5) {
+    #card {
+        width: 80vw;
+        height: 50vw;
+        margin: calc(50vh - 25vw) auto;
+    }
+}
+
+@media screen and (min-aspect-ratio: 8/5) {
+    #card {
+        height: 70vh;
+        width: 112vh;
+        margin: 15vh auto;
+    }
+}
+
+#form  {
+    background-color: #fff;
+    width: 60%;
+    height: 100%;
+    position: relative;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign_in, #sign_up, #changePasswd {
+    width: 64%;
+}
+
+h2, a {
+    text-align: center;
+    width: 100%;
+}
+
+a {
+    margin: 10px auto;
+    display: block;
+    text-decoration: none;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 9px;
+    width: 100%;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid #21a675;
+    transition: border-bottom-color 1s linear;
+    width: 100%;
+}
+
+.input:hover {
+    border-bottom-color: transparent;
+}
+
+input, .button, select {
+    display: block;
+    margin: 10% auto 0;
+    outline: none;
+}
+
+input {
+    border: none;
+}
+
+input[type='submit'] {
+    width: 40%;
+}
+
+button, input[type='submit'] {
+    background-color: #209067;
+    border: none;
+    border-radius: 30px;
+    height: 36px;
+    color: #fff;
+    font-size: 15px;
+    transition: background-color 1s linear;
+    cursor: pointer;
+}
+
+button {
+    width: 100px;
+}
+
+.change {
+    width: 40%;
+    color: #fff;
+    text-align: center;
+    background: url(../img/checklist-animate.svg) no-repeat center;
+    position: relative;
+}
+
+.button {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 50px);
+
+}
+
+.change button:hover, input[type='submit']:hover {
+    background-color: #114733;
+}
